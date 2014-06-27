@@ -4,6 +4,8 @@ ruby '2.1.1'
 gem 'rails', '4.0.4'
 
 
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -45,3 +47,5 @@ end
 #gem 'twitter'
 gem 'twitter', :git => 'https://github.com/sferik/twitter.git'
 gem 'omniauth-twitter', '1.0.1'
+
+gem 'rails_12factor', group: :production
