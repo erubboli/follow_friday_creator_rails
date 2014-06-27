@@ -1,0 +1,32 @@
+body
+{
+ width:800px;
+ margin: auto auto;
+}
+span#count
+{
+ color:green;
+}
+div.friend
+{
+ border:2px solid;
+ border-radius:10px;
+ width:60%;
+}
+#tweetform
+{
+ position:fixed;
+ top:90px;
+ border:2px solid;
+ border-radius:10px;
+}
+#tweetformwrapper
+{
+float:right;
+width:35%;
+}
+button
+{
+position:relative;
+float:right;
+}

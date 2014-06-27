@@ -1,0 +1,21 @@
+   <h2>Hi <%= @user.name %> Select all the friend to insert and press tweet</h2>
+   <hr />
+   <div id='tweetformwrapper'>
+    <form action='' id='tweetform' method='post'>
+     <textarea cols='25' rows='10' id='tweetarea'disabled></textarea><br>
+     <span id='count'>140</span>
+     <button type='submit' id='submit' disabled><img id='twittericon' src="<%= image_path 'bird_gray_16.png' %>"> Tweet</button>
+     <p><a href='/signout'>Logout</a></p>
+    </form>
+   </div>
+   <div id='friendlist'>
+    <form>
+      <% @friendsDetail.each do |friend| %>
+        <div class='friend'>
+          <input type='checkbox' name='friend[]' value='@<%= friend.screen_name %>'>
+            <img src='<%= friend.profile_image_url %>' width='48' hegh='48'><%= friend.name %>
+          </input>
+        </div>
+      <% end %>
+    </form>
+   </div>
