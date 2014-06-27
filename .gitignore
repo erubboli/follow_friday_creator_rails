@@ -1,3 +1,5 @@
+.secret
+01_development_twitter.rb
 *.gem
 *.rbc
 /.config
